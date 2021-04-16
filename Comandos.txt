@@ -1,0 +1,4 @@
+git init -> Inicializar um novo repositório 
+no diretório no qual o comando foi executado.
+
+git status -> Vizualização do status, traz informações sobre o repositório.
