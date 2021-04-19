@@ -8,4 +8,10 @@ git checkout titulo -> Modificar para outro branch
 
 git checkaut -b lista -> Criar e modificar para branch criada
 
+------ Unindo dois branch ------
+
+git marge titulo -> unir commits de dois branchs 
+
+
+
 
