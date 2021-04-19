@@ -15,4 +15,8 @@ git marge titulo -> unir commits de dois branchs
 git rebase titulo -> Atualiza o branch em um único comando, 
 e mantem o últomo trabalho feito
 
+Antes de mandar qualquer dado, verificar atualizações com
+
+git pull origin master
+
 
