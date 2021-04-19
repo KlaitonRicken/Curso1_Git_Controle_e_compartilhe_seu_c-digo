@@ -8,7 +8,7 @@ git checkout titulo -> Modificar para outro branch
 
 git checkaut -b lista -> Criar e modificar para branch criada
 
------- Unindo dois branch ------
+------ Unindo dois branchs ------
 
 git marge titulo -> unir commits de dois branchs 
 
@@ -16,7 +16,20 @@ git rebase titulo -> Atualiza o branch em um único comando,
 e mantem o últomo trabalho feito
 
 Antes de mandar qualquer dado, verificar atualizações com
-
 git pull origin master
+
+
+----- Desfazendo alterações ------
+
+git checkout -- <file> -> Para remover alterações não marcadas e commitadas
+
+git reset HEAD teste.html -> Para remover alterações caso tenha feito marcação
+
+git reverse <hash do commit> -> Para remover alterações commitadas
+
+
+
+
+
 
 
