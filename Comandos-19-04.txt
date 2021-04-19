@@ -18,14 +18,24 @@ e mantem o últomo trabalho feito
 Antes de mandar qualquer dado, verificar atualizações com
 git pull origin master
 
-
 ----- Desfazendo alterações ------
 
 git checkout -- <file> -> Para remover alterações não marcadas e commitadas
 
 git reset HEAD teste.html -> Para remover alterações caso tenha feito marcação
 
-git reverse <hash do commit> -> Para remover alterações commitadas
+git revert <hash do commit> -> Para remover alterações commitadas
+
+----- Guardando informações com stash -----
+
+git stash -> Armazena temporariamente as modificações sem a necessidade de commit
+
+git stash list -> lista de modificações armazenadas
+
+git stash drop -> remover modificações do stesh
+
+git stash pop -> remove as modificações do stesh e faz o merge
+
 
 
 
