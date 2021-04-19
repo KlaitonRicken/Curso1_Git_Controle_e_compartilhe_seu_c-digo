@@ -12,6 +12,7 @@ git checkaut -b lista -> Criar e modificar para branch criada
 
 git marge titulo -> unir commits de dois branchs 
 
-
+git rebase titulo -> Atualiza o branch em um único comando, 
+e mantem o últomo trabalho feito
 
 
