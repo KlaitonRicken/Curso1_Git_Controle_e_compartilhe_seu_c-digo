@@ -36,6 +36,12 @@ git stash drop -> remover modificações do stesh
 
 git stash pop -> remove as modificações do stesh e faz o merge
 
+---- Navegando entre commits -----
+
+git checkout <hash>
+
+git diff <hash>..<hash> -> mostra a diferença entre dois commits
+
 
 
 
