@@ -1,0 +1,11 @@
+----- Criando novo branch -----
+
+git branch titulo -> Criar novo branch
+
+git branch -> Exibe o nome dos branch
+
+git checkout titulo -> Modificar para outro branch
+
+git checkaut -b lista -> Criar e modificar para branch criada
+
+
