@@ -38,10 +38,18 @@ git stash pop -> remove as modificações do stesh e faz o merge
 
 ---- Navegando entre commits -----
 
-git checkout <hash>
+git checkout <hash commit>
 
-git diff <hash>..<hash> -> mostra a diferença entre dois commits
+git diff <hash commit>..<hash commit> -> mostra a diferença entre dois commits
 
+----- Criar TAG ----
+
+git tag -a v0.1.0 -> Gera uma Release, onde posteriormente pode-se baixar
+o arquivo co qual irá conter o código no exato estado no qual foi criado a tag
+
+git tag -> listar as tags existentes
+
+git push origin v0.1.0 -> mandar a tag paro o repo remoto
 
 
 
