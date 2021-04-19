@@ -1,0 +1,59 @@
+----- Criando novo branch -----
+
+git branch titulo -> Criar novo branch
+
+git branch -> Exibe o nome dos branch
+
+git checkout titulo -> Modificar para outro branch
+
+git checkaut -b lista -> Criar e modificar para branch criada
+
+------ Unindo dois branchs ------
+
+git marge titulo -> unir commits de dois branchs 
+
+git rebase titulo -> Atualiza o branch em um único comando, 
+e mantem o últomo trabalho feito
+
+Antes de mandar qualquer dado, verificar atualizações com
+git pull origin master
+
+----- Desfazendo alterações ------
+
+git checkout -- <file> -> Para remover alterações não marcadas e commitadas
+
+git reset HEAD teste.html -> Para remover alterações caso tenha feito marcação
+
+git revert <hash do commit> -> Para remover alterações commitadas
+
+----- Guardando informações com stash -----
+
+git stash -> Armazena temporariamente as modificações sem a necessidade de commit
+
+git stash list -> lista de modificações armazenadas
+
+git stash drop -> remover modificações do stesh
+
+git stash pop -> remove as modificações do stesh e faz o merge
+
+---- Navegando entre commits -----
+
+git checkout <hash commit>
+
+git diff <hash commit>..<hash commit> -> mostra a diferença entre dois commits
+
+----- Criar TAG ----
+
+git tag -a v0.1.0 -> Gera uma Release, onde posteriormente pode-se baixar
+o arquivo co qual irá conter o código no exato estado no qual foi criado a tag
+
+git tag -> listar as tags existentes
+
+git push origin v0.1.0 -> mandar a tag paro o repo remoto
+
+
+
+
+
+
+
