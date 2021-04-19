@@ -2,3 +2,67 @@ git init -> Inicializar um novo repositório
 no diretório no qual o comando foi executado.
 
 git status -> Vizualização do status, traz informações sobre o repositório.
+
+Algumas informações presentes no STATUS são: HEAD, que mostra o estado atual do código,
+Working tree, onde os arquivos estão sendo realmente armazenados
+e Index, local onde o Git armazena o que será commitado.
+
+git add . -> monitorar todos os arquivos da pasta atual 
+(ou git add "nomeDoArquivo" -> para monitorar um araquivo em específico).
+
+git log -> histórico de commits.
+
+git config --local (ou --global) user.name "Seu nome aqui"
+git config --local (ou --global) user.email "seu@email.aqui" -> Para configurar as
+credenciais de quem executa os comandos.
+
+git log --online -> histórico resumido dos commits
+git log -p -> histórico mais detalhado dos commits
+
+git log --pretty="format:%H" -> Um dos vários comandos para personalizar 
+o log, trazendo apenas as informações desejadas.
+
+arquivo .gitignore
+
+git add .gitignore -> adicionando arquivo .gitignore
+
+--- Criando repositório remoto ----
+
+mkdir servidor/ e cd servidor -> criar e acessar pasta. 
+
+git init --bare -> Este repositório apenas contem as alterações
+dos arquivos e não uma cópia dos arquivos físicos.
+
+cd .. e cd 'Git Controle e compartilhe seu código' -> para voltar ao repositório.
+
+git remote -> Verificar os repositórios remotos que o repositótio local conhece.
+
+git remote add local(local é o nome do repositório remoto) C:/Users/klait/servidor/ -> adiciona o repositório remoto.
+
+git remote -v -> Verifica o endereço do repositório.
+
+--- Clonar repositório ---
+
+git clone -> clonar repositório
+
+git clone C:/Users/klait/servidor/ projeto
+
+--- Enviando os dados do repositório para o repositório remoto ---
+
+git push local master -> envia todos os dados para o repositório local
+
+git remote rename origin local -> mudando nome default do repositório remoto
+
+git pull local master -> Traz os dados do repositório remoto
+
+----- Enviando os dados do repositório local para servidor GitHub ----
+
+git remote add origin https://github.com/KlaitonRicken/Curso1_Git_Controle_e_compartilhe_seu_c-digo.git -> Para criar o repositório no servidor
+
+git push -u origin main -> Para enviar os dados, caso o parâmetro -u não for inserido
+será necessário toda vez apontar o reposiótrio e a branch
+
+
+
+
+
